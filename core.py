@@ -27,8 +27,8 @@ class Core(Tk):
         
         self.B1 = ZRVStyle.ZRVBtn(self,command=lambda:CircleTimer.CircleTimer(59), text = "Круговий таймер")
         self.B1.grid(pady = 50, padx = 20, column=1, row=1)
-        self.B1 = ZRVStyle.ZRVBtn(self,command=lambda:CircleTimer.CircleTimer(59), text = "Круговий таймер")
-        self.B1.grid(pady = 50, padx = 20, column=2, row=1)
+        self.B2 = ZRVStyle.ZRVBtn(self,command=lambda:print(1), text = "Круговий таймер")
+        self.B2.grid(pady = 50, padx = 20, column=2, row=1)
         
 if __name__=="__main__":      
 
