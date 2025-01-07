@@ -5,7 +5,7 @@ sys.path.insert(0, f'{sys.path[0]}\\projects\\')
 
 from tkinter import Tk, Label, Button, PhotoImage
 import fontawesome as fa
-import CircleTimer, ZRVStyle
+import CircleTimer, ZRVStyle, Gameplace, Kurs
 
 print(fa.icons['check-square'])
 
@@ -29,6 +29,10 @@ class Core(Tk):
         self.B1.grid(pady = 50, padx = 20, column=1, row=1)
         self.B2 = ZRVStyle.ZRVBtn(self,command=lambda:print(1), text = "Круговий таймер")
         self.B2.grid(pady = 50, padx = 20, column=2, row=1)
+        self.B2 = ZRVStyle.ZRVBtn(self,command=Gameplace.Games, text = "Ігрова зона")
+        self.B2.grid(pady = 50, padx = 20, column=3, row=1)
+        self.B2 = ZRVStyle.ZRVBtn(self,command=Kurs.Kurs_Valiut, text = "Курс валют")
+        self.B2.grid(pady = 50, padx = 20, column=4, row=1)
         
 if __name__=="__main__":      
 
