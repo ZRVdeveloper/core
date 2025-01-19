@@ -5,7 +5,7 @@ sys.path.insert(0, f'{sys.path[0]}\\projects\\')
 
 from tkinter import Tk, Label, Button, PhotoImage
 import fontawesome as fa
-import CircleTimer, ZRVStyle, Gameplace, Kurs, passwordgenerator
+import CircleTimer, ZRVStyle, Gameplace, Kurs, passwordgenerator, alphacodegenerator
 
 print(fa.icons['check-square'])
 
@@ -35,6 +35,8 @@ class Core(Tk):
         self.B4.grid(pady = 50, padx = 20, column=4, row=1)
         self.B5 = ZRVStyle.ZRVBtn(self,command=passwordgenerator.ZRVPassword_generator, text = "Генератор паролів")
         self.B5.grid(pady = 50, padx = 20, column=4, row=1)
+        self.B6 = ZRVStyle.ZRVBtn(self,command=alphacodegenerator.ZRVAlpha_generator, text = "Генератор коду з числа")
+        self.B6.grid(pady = 0, padx = 20, column=1, row=2)
         
 if __name__=="__main__":      
 
